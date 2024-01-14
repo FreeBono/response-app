@@ -1,16 +1,10 @@
 # responsive_app
 
-A new Flutter project.
+Responsive dashboard screen
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+![FlutterDemo-Chrome2024-01-1422-01-22-ezgif com-video-to-gif-converter](https://github.com/FreeBono/response-app/assets/87519206/10fb04f0-970f-471f-9f02-6c0c1497a54d)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### packages
+- flutter_fancy_tree_view
