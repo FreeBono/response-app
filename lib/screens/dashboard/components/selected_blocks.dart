@@ -22,7 +22,7 @@ class SelectedBlocks extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Selected Blocks",
+            "Dashboard Box2",
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w500,
@@ -83,9 +83,9 @@ class GeneralCard extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Expanded(child: Text("${selectedData[index].ShipNumber}")),
-                    Expanded(child: Text("${selectedData[index].BlockName}")),
-                    Expanded(child: Text("${selectedData[index].Date}")),
+                    Expanded(child: Text("${selectedData[index].Col1}")),
+                    Expanded(child: Text("${selectedData[index].Col2}")),
+                    Expanded(child: Text("${selectedData[index].Col3}")),
                   ],
                 ),
                 SizedBox(
@@ -100,9 +100,9 @@ class GeneralCard extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Expanded(child: Text("${selectedData[index].Ver}")),
-                    Expanded(child: Text("${selectedData[index].Rev}")),
-                    Expanded(child: Text("${selectedData[index].Manager}")),
+                    Expanded(child: Text("${selectedData[index].Col4}")),
+                    Expanded(child: Text("${selectedData[index].Col5}")),
+                    Expanded(child: Text("${selectedData[index].Col6}")),
                   ],
                 ),
               ],
@@ -160,12 +160,12 @@ class GeneralCard extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    Expanded(child: Text("${selectedData[index].ShipNumber}")),
-                    Expanded(child: Text("${selectedData[index].BlockName}")),
-                    Expanded(child: Text("${selectedData[index].Date}")),
-                    Expanded(child: Text("${selectedData[index].Ver}")),
-                    Expanded(child: Text("${selectedData[index].Rev}")),
-                    Expanded(child: Text("${selectedData[index].Manager}")),
+                    Expanded(child: Text("${selectedData[index].Col1}")),
+                    Expanded(child: Text("${selectedData[index].Col2}")),
+                    Expanded(child: Text("${selectedData[index].Col3}")),
+                    Expanded(child: Text("${selectedData[index].Col4}")),
+                    Expanded(child: Text("${selectedData[index].Col5}")),
+                    Expanded(child: Text("${selectedData[index].Col6}")),
                   ],
                 ),
               ],

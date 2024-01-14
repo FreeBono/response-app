@@ -1,27 +1,21 @@
 import 'package:responsive_app/screens/dashboard/dashboard_screen.dart';
 
-class TreeModel {
-  String title;
-  List<TreeModel> children;
-
-  TreeModel({required this.title, this.children = const <TreeModel>[]});
-}
-
 class BlockInfoModel {
-  String ShipNumber;
-  String BlockName;
-  String Date;
-  String Rev;
-  String Ver;
-  String Manager;
+  String Col1;
+  String Col2;
+  String Col3;
+  String Col4;
+  String Col5;
+  String Col6;
 
-  BlockInfoModel(
-      {required this.ShipNumber,
-      required this.BlockName,
-      required this.Date,
-      required this.Rev,
-      required this.Ver,
-      required this.Manager});
+  BlockInfoModel({
+    required this.Col1,
+    required this.Col2,
+    required this.Col3,
+    required this.Col4,
+    required this.Col5,
+    required this.Col6,
+  });
 }
 
 class BoxModel3 {
@@ -38,111 +32,121 @@ class BoxModel3 {
   });
 }
 
-List<TreeModel> treeData = [
-  TreeModel(
-    title: "SN1111",
+class Node {
+  Node({
+    required this.title,
+    Iterable<Node>? children,
+  }) : children = <Node>[...?children];
+
+  final String title;
+  final Iterable<Node> children;
+}
+
+Node treeData = Node(title: '/', children: [
+  Node(
+    title: "level1",
     children: [
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
     ],
   ),
-  TreeModel(
-    title: "SN1111",
+  Node(
+    title: "level1",
     children: [
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
     ],
   ),
-  TreeModel(
-    title: "SN1111",
+  Node(
+    title: "level1",
     children: [
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
-      TreeModel(
-        title: "A110",
+      Node(
+        title: "level2",
         children: [
-          TreeModel(title: "0", children: []),
-          TreeModel(title: "1", children: []),
-          TreeModel(title: "2", children: [])
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: []),
+          Node(title: "level3", children: [])
         ],
       ),
     ],
   ),
-];
+]);
 
 List<BlockInfoModel> selectedData = [
   BlockInfoModel(
-      ShipNumber: "SN1234",
-      BlockName: "A110",
-      Date: "23-10-01",
-      Rev: "0",
-      Ver: "3",
-      Manager: "홍길동"),
+      Col1: "Data1",
+      Col2: "Data2",
+      Col3: "Data3",
+      Col4: "Data4",
+      Col5: "Data5",
+      Col6: "Data6"),
   BlockInfoModel(
-      ShipNumber: "SN1235",
-      BlockName: "B110",
-      Date: "23-12-01",
-      Rev: "1",
-      Ver: "2",
-      Manager: "홍길동"),
+      Col1: "Data7",
+      Col2: "Data8",
+      Col3: "Data9",
+      Col4: "Data10",
+      Col5: "Data11",
+      Col6: "Data12"),
 ];
 
 List<BoxModel3> BoxData3 = [

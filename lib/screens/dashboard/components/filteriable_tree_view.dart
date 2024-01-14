@@ -5,106 +5,6 @@ import 'package:responsive_app/constants.dart';
 import 'package:responsive_app/data/dashboard_data.dart';
 import 'package:responsive_app/screens/dashboard/dashboard_screen.dart';
 
-class Node {
-  Node({
-    required this.title,
-    Iterable<Node>? children,
-  }) : children = <Node>[...?children];
-
-  final String title;
-  final Iterable<Node> children;
-}
-
-Node treeData = Node(title: '/', children: [
-  Node(
-    title: "SN1111",
-    children: [
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-    ],
-  ),
-  Node(
-    title: "SN1111",
-    children: [
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-    ],
-  ),
-  Node(
-    title: "SN1111",
-    children: [
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-      Node(
-        title: "A110",
-        children: [
-          Node(title: "0", children: []),
-          Node(title: "1", children: []),
-          Node(title: "2", children: [])
-        ],
-      ),
-    ],
-  ),
-]);
-
 class FilterableTreeView extends StatefulWidget {
   const FilterableTreeView({super.key});
 
@@ -205,7 +105,7 @@ class _FilterableTreeViewState extends State<FilterableTreeView> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            "Block List",
+            "Dshboard Box1",
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w500,

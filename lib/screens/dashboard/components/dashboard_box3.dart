@@ -20,7 +20,7 @@ class DashboardBox3 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Dashboard box3",
+            "Dashboard Box3",
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w500,
